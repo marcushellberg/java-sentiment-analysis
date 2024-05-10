@@ -18,6 +18,9 @@
     "@vaadin/react-components": "24.4.0-beta1",
     "@vaadin/router": "1.7.5",
     "@vaadin/vaadin-development-mode-detector": "2.0.6",
+    "@vaadin/vaadin-lumo-styles": "24.4.0-beta1",
+    "@vaadin/vaadin-material-styles": "24.4.0-beta1",
+    "@vaadin/vaadin-themable-mixin": "24.4.0-beta1",
     "@vaadin/vaadin-usage-statistics": "2.1.2",
     "construct-style-sheets-polyfill": "3.1.0",
     "date-fns": "2.29.3",
@@ -73,6 +76,9 @@
       "@vaadin/react-components": "24.4.0-beta1",
       "@vaadin/router": "1.7.5",
       "@vaadin/vaadin-development-mode-detector": "2.0.6",
+      "@vaadin/vaadin-lumo-styles": "24.4.0-beta1",
+      "@vaadin/vaadin-material-styles": "24.4.0-beta1",
+      "@vaadin/vaadin-themable-mixin": "24.4.0-beta1",
       "@vaadin/vaadin-usage-statistics": "2.1.2",
       "construct-style-sheets-polyfill": "3.1.0",
       "date-fns": "2.29.3",
@@ -111,7 +117,7 @@
       "workbox-core": "7.1.0",
       "workbox-precaching": "7.1.0"
     },
-    "hash": "6d486725ec28af47689638470e625788cf3a69270b31adf7385d7f3d2fcfa2c1"
+    "hash": "f2ffc9d65c2169e413ef88832f03b26b79a1eeed0db7376f1597988d64389b55"
   },
   "overrides": {
     "@vaadin/bundles": "$@vaadin/bundles",
@@ -147,6 +153,9 @@
     "@vaadin/hilla-frontend": "$@vaadin/hilla-frontend",
     "@vaadin/hilla-file-router": "$@vaadin/hilla-file-router",
     "@vaadin/hilla-react-signals": "$@vaadin/hilla-react-signals",
-    "@vaadin/hilla-react-i18n": "$@vaadin/hilla-react-i18n"
+    "@vaadin/hilla-react-i18n": "$@vaadin/hilla-react-i18n",
+    "@vaadin/vaadin-themable-mixin": "$@vaadin/vaadin-themable-mixin",
+    "@vaadin/vaadin-lumo-styles": "$@vaadin/vaadin-lumo-styles",
+    "@vaadin/vaadin-material-styles": "$@vaadin/vaadin-material-styles"
   }
 }

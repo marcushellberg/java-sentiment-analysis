@@ -1,6 +1,10 @@
 import { ViewConfig } from '@vaadin/hilla-file-router/types.js';
 
-export const config: ViewConfig = { menu: { order: 1, icon: 'line-awesome/svg/file.svg' }, title: 'About' };
+export const config: ViewConfig = {
+  menu: {
+    order: 1,
+    icon: 'line-awesome/svg/question-circle.svg' },
+  title: 'About' };
 
 export default function AboutView() {
   return (
