@@ -13,9 +13,7 @@ public class Review {
     private Long id;
     private String name;
     private String review;
-    @Nullable
     private Sentiment sentiment;
-    @Nullable
     private String response;
 
     public Review() {
@@ -50,21 +48,19 @@ public class Review {
         this.review = review;
     }
 
-    @Nullable
     public Sentiment getSentiment() {
         return sentiment;
     }
 
-    public void setSentiment(@Nullable Sentiment sentiment) {
+    public void setSentiment(Sentiment sentiment) {
         this.sentiment = sentiment;
     }
 
-    @Nullable
     public String getResponse() {
         return response;
     }
 
-    public void setResponse(@Nullable String response) {
+    public void setResponse(String response) {
         this.response = response;
     }
 }
