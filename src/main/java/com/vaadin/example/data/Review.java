@@ -1,9 +1,7 @@
 package com.vaadin.example.data;
 
 import jakarta.annotation.Nullable;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class Review {
@@ -12,8 +10,12 @@ public class Review {
     @GeneratedValue
     private Long id;
     private String name;
+    @Lob
     private String review;
+    @Nullable // Needed until https://github.com/vaadin/hilla/issues/2406 is fixed
     private Sentiment sentiment;
+    @Nullable
+    @Lob
     private String response;
 
     public Review() {
@@ -48,19 +50,21 @@ public class Review {
         this.review = review;
     }
 
+    @Nullable
     public Sentiment getSentiment() {
         return sentiment;
     }
 
-    public void setSentiment(Sentiment sentiment) {
+    public void setSentiment(@Nullable Sentiment sentiment) {
         this.sentiment = sentiment;
     }
 
+    @Nullable
     public String getResponse() {
         return response;
     }
 
-    public void setResponse(String response) {
+    public void setResponse(@Nullable String response) {
         this.response = response;
     }
 }
